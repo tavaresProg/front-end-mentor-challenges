@@ -96,7 +96,7 @@ body {
 .input__section .btn {
   cursor: pointer;
   position: absolute;
-  ex display: inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   top: -1px;
