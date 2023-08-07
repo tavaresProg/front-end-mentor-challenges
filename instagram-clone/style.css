@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+#main-container {
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 32px;
+}
+
+#banner-container,
+#form-container {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container {
+    text-align: right;
+}
+
+#banner-container img {
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#form-container {
+    text-align: center;
+}
+
+#form-box {
+    background: #fff;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+#logo-insta {
+    width: 176px;
+    height: 50px;
+    margin: 30px auto 12px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form input,
+.entrar {
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+    outline: none;
+}
+
+.entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4CB5F9;
+    color: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 13px;
+    padding: 16px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.entrar:hover {
+    background: #0095F6;
+}
+
+.separator {
+    position: relative;
+}
+
+.line {
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #737373;
+    background-color: #fff;
+    top: -6px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 13px;
+}
+
+
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #373799;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facebook-login img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+#facebook-login span {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+#forgot-pass {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#forgot-pass a {
+    text-decoration: none;
+    color: #373799;
+}
+
+#register-container {
+    background: white;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#register-container p {
+    font-size: 14px;
+    color: #262626;
+}
+
+#register-container a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#get-app-container {
+    text-align: center;
+    width: 350px;
+}
+
+#get-app-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#get-app-container a {
+    text-decoration: none;
+}
+
+#get-app-container img {
+    width: 136px;
+    height: 40px;
+
+}
+
+footer {
+    text-align: left;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+footer #footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+#footer-links li {
+    margin: 0px 8px 8px 8px;
+}
+
+
+#footer-links a,
+#copyright {
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 850px) {
+
+    body {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form-container {
+        width: 100%;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    #main-container,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    #footer-links {
+        margin-bottom: 10px;
+    }
+
+}
